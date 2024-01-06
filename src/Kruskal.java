@@ -18,12 +18,7 @@ public class Kruskal {
         //sort the edges
         List<Edge> edgeList = graph.getEdgeList();
         List<Node> nodeList = graph.getNodeList();
-        edgeList.sort(new Comparator<Edge>() {
-            @Override
-            public int compare(Edge o1, Edge o2) {
-                return o1.getWeight() - o2.getWeight();
-            }
-        });
+        edgeList.sort(Comparator.comparingInt(Edge::getWeight));
 
         //initializing list of empty couples
         List<Couples> finalResultCouples = new ArrayList<>(Collections.emptyList());

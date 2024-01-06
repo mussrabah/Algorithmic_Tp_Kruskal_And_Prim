@@ -53,8 +53,30 @@ public class Graph {
         }
     }
 
+    public void fillGraph2() {
+        List<Edge> edges = List.of(
+                new Edge(12, 1),
+                new Edge(13, 3),
+                new Edge(23, 7)
+        );
+        for (int i = 0; i < 3; i++) {
+            Node newNode = new Node("V"+(i+1), new ArrayList<>());
+            addNode(newNode);
+        }
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (i == 0)
+                    addEdge(edges.get(j));
+
+                if ((edges.get(j).getId() % 10 == (i + 1)) || edges.get(j).getId() / 10 == (i + 1)) {
+                    nodeList.get(i).addEdge(edges.get(j));
+                }
+            }
+        }
+    }
+
     public void showGraph() {
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < nodeList.size(); i++) {
             System.out.println("Node: "+nodeList.get(i));
             System.out.println("Its edges: "+nodeList.get(i).getEdgeList());
         }
