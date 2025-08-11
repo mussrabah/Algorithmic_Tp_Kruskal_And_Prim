@@ -1,41 +1,140 @@
-# Graph Algorithms Implementation
+# Multi-Project Repository
 
-This project contains the implementation of two popular graph algorithms - Prim's Algorithm and Kruskal's Algorithm in Java. 
+This repository contains two distinct projects showcasing different programming paradigms and technologies:
 
-## Classes
+## 📊 Java Graph Algorithms
 
-### 1. Prim
+Implementation of classic graph algorithms for finding minimum spanning trees.
 
-`Prim` is a Java class that implements Prim's algorithm, which is used for finding the minimum spanning tree of a graph. 
+**Location**: `java-algorithms/`
 
-Key methods of the `Prim` class include:
+**Technologies**: Java
 
-* `Prim(Graph graph)`: Constructor that accepts a Graph object.
-* `doPrim()`: Method that implements Prim's algorithm and returns a set of Couples representing the minimum spanning tree.
-* `searchForDistance(Node node1, Node node2)`: Returns the weight of the edge between the two provided nodes, otherwise, returns the maximum integer value.
-* `showChoosedCouples(Set<Couples> couplesList)`: Shows or prints the edges which are chosen in the minimum spanning tree and its total weight.
+**Algorithms Implemented**:
+- 🌳 **Kruskal's Algorithm**: Greedy algorithm for finding minimum spanning tree
+- 🌲 **Prim's Algorithm**: Another approach to minimum spanning tree construction
 
-### 2. Kruskal
+[📖 View Java Algorithms Documentation](./java-algorithms/README.md)
 
-`Kruskal` is a Java class that implements Kruskal's algorithm, which is also used for finding the minimum spanning tree of a graph.
-
-Key methods of the `Kruskal` class include:
-
-* `Kruskal(Graph graph)`: Constructor that accepts a Graph object.
-* `doKruskal()`: Method that implements Kruskal's Algorithm and returns the minimum spanning tree as a list of 'Couples' objects.
-* `showChoosedCouples(List<Couples> couplesList)`: Prints the chosen edges (encapsulated in a 'Couples' object) of the minimum spanning tree.
-
-## Setup
-
-This is a Java project, so ensure you have Java installed on your machine. To setup the project, follow the steps below:
-
+### Quick Start (Java)
 ```bash
-# Clone the repository
-git clone https://github.com/mussrabah/Algorithmic_Tp_Kruskal_And_Prim
+cd java-algorithms
+javac src/Main.java
+java -cp src Main
+```
 
-# Navigate to project directory
-cd Algorithmic_Tp_Kruskal_And_Prim
+---
 
-# Compile and run the project
-javac Main.java
-java Main
+## 🧮 Fancy Calculator - React Native
+
+A beautiful, cross-platform calculator app with modern UI and smooth animations.
+
+**Location**: `react-native-calculator/`
+
+**Technologies**: React Native, Expo, TypeScript
+
+**Features**:
+- 📱 **Cross-Platform**: Web, iOS, Android support
+- 🎨 **Multiple Themes**: Light, Dark, and Neon themes
+- ⚡ **Smooth Animations**: Modern UI with transitions
+- 🧮 **Full Calculator**: Complete arithmetic functionality
+
+[📖 View Calculator Documentation](./react-native-calculator/README.md)
+
+### Quick Start (React Native)
+```bash
+cd react-native-calculator
+npm install
+npm start
+```
+
+**Platform Commands**:
+- `npm run web` - Run in browser
+- `npm run android` - Run on Android
+- `npm run ios` - Run on iOS
+
+---
+
+## 🚀 Live Demo
+
+Try the calculator online: [Launch Web Calculator](https://your-calculator-url.com) *(Deploy the web build to see this in action)*
+
+## 📁 Repository Structure
+
+```
+├── java-algorithms/          # Graph algorithms in Java
+│   ├── src/                 # Java source files
+│   │   ├── Main.java
+│   │   ├── Kruskal.java
+│   │   ├── Prim.java
+│   │   └── graph/
+│   └── README.md
+├── react-native-calculator/ # Cross-platform calculator
+│   ├── src/                 # React Native source
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   ├── utils/
+│   │   ├── styles/
+│   │   └── types/
+│   ├── App.tsx
+│   ├── package.json
+│   └── README.md
+└── README.md               # This file
+```
+
+## 🛠️ Development Setup
+
+### Prerequisites
+- **Java**: JDK 8 or later
+- **Node.js**: v14 or later  
+- **Expo CLI**: `npm install -g @expo/cli`
+
+### Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/mussrabah/Algorithmic_Tp_Kruskal_And_Prim
+   cd Algorithmic_Tp_Kruskal_And_Prim
+   ```
+
+2. **For Java Algorithms**
+   ```bash
+   cd java-algorithms
+   javac src/Main.java
+   java -cp src Main
+   ```
+
+3. **For React Native Calculator**
+   ```bash
+   cd react-native-calculator
+   npm install
+   npm start
+   ```
+
+## 🎯 Project Goals
+
+This repository demonstrates:
+
+- **Algorithm Implementation**: Classic computer science algorithms in Java
+- **Modern Mobile Development**: Cross-platform app development with React Native
+- **UI/UX Design**: Beautiful, animated user interfaces
+- **Code Organization**: Clean project structure and documentation
+
+## 🤝 Contributing
+
+Contributions are welcome for both projects! Please:
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+**Happy Coding!** 🚀 Whether you're exploring graph algorithms or building beautiful mobile apps, this repository has something for everyone!
+
